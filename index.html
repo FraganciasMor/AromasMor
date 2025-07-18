@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MÓR - Body Splash</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: url('surtido-productos-argan-vista-frontal_23-2148955770.webp') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #222;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 300px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="IMG-20250603-WA0002.jpg" alt="Logo MÓR" class="logo" />
+  <h2>Tan vos, tan Mor.</h2>
+</body>
+</html>

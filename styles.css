@@ -1,0 +1,54 @@
+/* Basic reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #f5f3ef;
+}
+.top { text-align: center; padding: 1rem 1rem 0; }
+.brand { text-align: center; }
+.tagline { font-family: Georgia, 'Times New Roman', serif; color: #5c4033; margin-top: .25rem; }
+.filters { list-style: none; display: inline-flex; gap: .5rem; padding: 0; margin: 1rem 0; }
+.filters button {
+  background-color: #7a5230; color: #fff; border: 0; padding: .55rem 1rem;
+  border-radius: 999px; cursor: pointer; font-weight: 600;
+}
+.filters button.active, .filters button:focus { outline: 2px solid #5c3d21; }
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;
+  background: rgba(255,255,255,.9); padding: 1rem; border-radius: 12px;
+}
+.product {
+  background: #fff; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,.08);
+  transform: translateY(10px); opacity: 0; animation: fadeIn .5s ease forwards;
+}
+.product h2 { margin:.25rem 0; color:#5c4033; font-size:1.1rem; }
+.product p { margin:.25rem 0 .5rem; font-size:.95rem; }
+.product .btn-add {
+  background:#7a5230; color:#fff; border:0; border-radius:8px; padding:.5rem 1rem; font-weight:700; cursor:pointer;
+}
+.cart-container {
+  background:#fff; margin:1rem auto; padding:1rem; max-width:640px; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,.12);
+}
+.cart-item { display:flex; align-items:center; justify-content:space-between; padding:.35rem 0; }
+.cart-controls button {
+  background:#a87a4e; color:#fff; border:0; border-radius:6px; padding:.3rem .6rem; margin-left:.4rem; font-weight:700; cursor:pointer;
+}
+.checkout-buttons { display:flex; flex-direction:column; gap:.6rem; }
+.checkout-btn {
+  display:flex; align-items:center; justify-content:center; text-decoration:none;
+  padding:.7rem; border-radius:8px; color:#fff; font-weight:800;
+}
+.checkout-btn.whatsapp { background:#25D366; }
+.checkout-btn.instagram { background:#E4405F; }
+.checkout-btn.email { background:#D14836; }
+.footer { text-align:center; padding: 1rem; color:#6b6b6b; }
+.visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
+.skip { position:absolute; left:-9999px; }
+.skip:focus { left: 1rem; top: 1rem; background:#fff; padding:.5rem; border-radius:8px; box-shadow:0 0 0 2px #0003; }
+
+@keyframes fadeIn {
+  to { transform: translateY(0); opacity: 1; }
+}
